@@ -18,7 +18,6 @@
     <link href="/css/sweetalert.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    {{-- <link href="{{ asset('/css/style.css') }}" media="all" rel="stylesheet" type="text/css" /> --}}
 
     <!-- Scripts -->
     <script>
@@ -47,7 +46,6 @@
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
                         myambunet
-                        {{-- {{ config('app.name', 'myambunet') }} --}}
                     </a>
                 </div>
 
