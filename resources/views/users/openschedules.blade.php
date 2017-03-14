@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.useapp')
 @section('content')
 
-<main class="container-fluid">
+{{-- <main class="container-fluid">
 
         <h3>Registered Users <span class="label label-default">{{ $user->count() }}</span></h3>
         <h2 style="text-align: center;"><span  class="label label-primary"><i style="color: #fff;" class="fa fa-list-alt"></i> Open Schedules</span></h2>
@@ -51,10 +51,74 @@
                 </div>
             </div>
         </div>
+    </div> 
+
+
+</main> --}}
+<div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+
+                    <div class="col-md-12">
+                                <div class="">
+                                    <h1 style="text-align: center; font-size: 45px;"><i class="fa fa-list-alt"></i> Open Schedules</h1>
+                                </div>
+                    </div>
+                <div class="col-lg-12 col-md-12">
+                            <div class="card">
+                                <div class="card-header" data-background-color="blue">
+                                    <h4 class="title">Open Schedules 15th March, 2017</h4>
+                                    <p class="category"></p>
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <table class="table table-hover">
+                                        <thead class="text-warning">
+                                            <th>Title</th>
+                                            <th>Type</th>
+                                            <th>Start Time</th>
+                                            <th>End Time</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Need a medic today $200 flat</td>
+                                                <td>Full Day</td>
+                                                <td>02/06/17</td>
+                                                <td>02/07/17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Looking for full time medic </td>
+                                                <td>Fulltime TTS</td>
+                                                <td>02/06/17</td>
+                                                <td>02/07/17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>We pay premium price for quality medics</td>
+                                                <td>Fulltime MWF</td>
+                                                <td>02/06/17</td>
+                                                <td>02/07/17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Quick Run for 4 hours</td>
+                                                <td>Run</td>
+                                                <td>02/06/17</td>
+                                                <td>02/07/17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Are you available on Friday?</td>
+                                                <td>Fulltime Variable</td>
+                                                <td>02/06/17</td>
+                                                <td>02/07/17</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-</main>
-
 
 @endsection

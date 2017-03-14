@@ -19,12 +19,12 @@ class CreateUsersTable extends Migration
             $table->integer('photo_id')->nullable();
             $table->integer('get_email')->default(1);
             $table->string('name');
-            $table->string('about')->nullable();
-            $table->string('website')->nullable();
-            $table->string('facebook')->nullable();
-            $table->string('twitter')->nullable();
-            $table->string('github')->nullable();
-            $table->string('username');
+            $table->string('experience')->nullable();
+            $table->string('location')->nullable();
+            $table->string('mobile')->nullable();
+            $table->string('level')->nullable();
+            $table->string('license')->nullable();
+            $table->string('username')->nullable();
             $table->string('email')->unique();
             $table->string('password')->nullable();
             $table->string('stripe_id')->nullable();

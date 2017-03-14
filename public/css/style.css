@@ -409,7 +409,7 @@ h4 #pipeStyle{
 .footer-bottom {
   color: #fff;  
   background: #74ccef;/*#E3E3E3;*/
- /* border-top: 1px solid #DDDDDD;*/
+  border-top: 1px solid #DDDDDD;
   padding-top: 10px;
   padding-bottom: 10px;
 }

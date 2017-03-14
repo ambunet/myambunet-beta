@@ -1,18 +1,19 @@
-@extends('layouts.app')
+@extends('layouts.useapp')
 @section('content')
 
 <main class="container-fluid">
 
     <div class="container-fluid">
-        <div class="jumbothon">
+    <br>
+        {{-- <div class="">
             <h2><span class="label label-default">{{ $user->count() }}</span> Users on myambunet</h2>
-        </div>
+        </div> --}}
     </div>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <h1 class="page-header">Recent Users</h1>
+                <h1 class="page-header"></h1>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>

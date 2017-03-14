@@ -1,4 +1,5 @@
-@if ($user->about)
+
+{{-- @if ($user->about)
     <div>
         <h2>About</h2>
         <hr>
@@ -10,33 +11,39 @@
     <h2>URL</h2>
     <hr>
     <a href="{{ $user->username }}">myambunet/{{ $user->username }}</a>
-</div>
+</div> --}}
 
-@if ($user->website)
+{{-- @if ($user->experience)
     <div>
-        <h2>Website</h2>
+        <h2>Experience</h2>
         <hr>
-        <a href="{{ $user->website }}">{{ $user->website }}</a>
+        <a href="{{ $user->experience }}">{{ $user->experience }}</a>
     </div>
-@endif
+@endif --}}
 
-@if ($user->facebook || $user->twitter || $user->github)
-    <div>
-        <h2>Get Social</h2>
+{{-- @if ($user->facebook || $user->twitter || $user->github) --}}
+   {{--  <div>
+        <h2>Info</h2>
         <hr>
         <ol class="list-unstyled">
-            @if ($user->facebook)
-                <li><a href="{{ $user->facebook }}">{{ $user->facebook }}</a></li>
+            @if ($user->experience)
+                <li><a href="{{ $user->experience }}">{{ $user->experience }}</a></li>
             @endif
-            @if ($user->twitter)
-                <li><a href="{{ $user->twitter }}">{{ $user->twitter }}</a></li>
+            @if ($user->location)
+                <li><a href="{{ $user->location }}">{{ $user->location }}</a></li>
             @endif
-            @if ($user->github)
-                <li><a href="{{ $user->github }}">{{ $user->github }}</a></li>
+            @if ($user->email)
+                <li><a href="{{ $user->email }}">{{ $user->email }}</a></li>
             @endif
-            @if ($user->github)
-                <li><a href="{{ $user->github }}">{{ $user->github }}</a></li>
+            @if ($user->mobile)
+                <li><a href="{{ $user->mobile }}">{{ $user->mobile }}</a></li>
+            @endif
+            @if ($user->level)
+                <li><a href="{{ $user->level }}">{{ $user->level }}</a></li>
+            @endif
+            @if ($user->license)
+                <li><a href="{{ $user->license }}">{{ $user->license }}</a></li>
             @endif
         </ol>
-    </div>
-@endif
+    </div> --}}
+{{-- @endif --}}

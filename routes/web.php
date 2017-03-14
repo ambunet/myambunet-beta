@@ -36,6 +36,7 @@ Route::patch('/blog/{id}', 'BlogController@update');
 Route::delete('/blog/{id}', 'BlogController@destroy');
 
 Route::get('admin', 'AdminController@index');
+Route::get('admin', 'AdminController@adminview');
 
 Route::resource('categories', 'CategoryController');
 // do not use photo as your route because we already have photo folder in public. just to avoid conflict

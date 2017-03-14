@@ -62,8 +62,6 @@
 
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-
-                            {{-- <li><a href="{{ url('/redirect') }}"><i class="fa fa-btn fa-facebook-official"></i> Login</a></li> --}}
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
@@ -80,7 +78,8 @@
                                     </li>
                                 </ul>        
                             </li>    
-                            <li><a href="{{ url('/list/') }}"><i class="fa fa-calendar"></i></a>
+                            <li><a href="{{ url('/list/') }}"><i class="fa fa-calendar"></i>
+                            </a>
                             </li>
                             <li><a href="#"><i class="fa fa-comments-o"></i></a>
                             </li>
