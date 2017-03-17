@@ -42,7 +42,7 @@
 
 			
 	    <div class="main-panel">
-			<nav class="navbar navbar-transparent navbar-absolute">
+			<nav class="navbar navbar-default navbar-absolute">
 				<div class="container-fluid">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse">
@@ -54,16 +54,20 @@
 				
 					</div>
 					<div class="collapse navbar-collapse">
-						 <ul class="nav navbar-nav navbar-left">
-						 
-				<li><a href="{{ url('/') }}" class="simple-text">
-					myambunet
-				</a></li>
+			<ul class="nav navbar-nav navbar-left">
+					 
+		      <li>
+		        <a href="{{ url('/') }}" class="simple-text">
+				<img style="" src="images/myambunet.png" alt="">	
+				</a>
+			  </li>
 			
-	                        @if (Auth::user() ? Auth::user()->role->id === 1 : '')
-	                            <li><a href="{{ url('/admin') }}">Admin</a></li>
-	                        @endif
-                    	</ul>
+	              @if (Auth::user() ? Auth::user()->role->id === 1 : '')
+	          <li>
+	          <a href="{{ url('/admin') }}">Admin</a>
+	          </li>
+	              @endif
+           </ul>
 						{{-- <div class="collapse navbar-collapse"> --}}
 						<ul class="nav navbar-nav navbar-right">
 						@if (Auth::guest())
@@ -154,6 +158,7 @@
 					</div>
 				</div>
 			</nav>
+			<br><br>
 
         @yield('content')               
     </div>

@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => 'support@ambu-net.com',
+        'address' => 'sarahebadan@ambu-net.com',
         'name' => 'Sarah'
         // 'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         // 'name' => env('MAIL_FROM_NAME', 'Example'),
